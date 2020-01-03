@@ -21,7 +21,11 @@ http://140.124.181.142:4200/
 
 單元測試可以直接進SE資料夾後跑npm install 再跑npm run cov
 
-即可執行單元測試並生成coverage report在SE/coverage/se_project/src下點index.html即是unit test report
+即可執行單元測試並生成coverage report在SE/coverage/se_project下點index.html即是unit test report
+
+我們自己執行的unit test結果在doc/coverage內
+
+進doc/coverage/se_project後點index.html即可看到
 
 驗收測試在project/SE_test內使用robot framework 寫的
 
