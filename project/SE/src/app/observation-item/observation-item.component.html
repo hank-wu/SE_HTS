@@ -1,0 +1,41 @@
+<br>
+
+<div>
+  <button mat-raised-button [disabled] = "false" (click)="clickNew()">新增</button>
+  <button mat-raised-button [disabled] = "editDisabled" (click) = "clickEdit()">修改</button>
+</div>
+
+<br>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+    
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef  style="width: 100px;">
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-radio-button #button [value]="row" (click)="checkState(button, row)">
+        <!-- <mat-radio-button #button [value]="row" (click)="checkState(button)"> -->
+        </mat-radio-button>
+        <!-- <mat-radio-button></mat-radio-button> -->
+      </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="item">
+      <th mat-header-cell *matHeaderCellDef style="width: 300px;"> 檢測項目 </th>
+      <td mat-cell *matCellDef="let element"> {{element.item}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="unit">
+      <th mat-header-cell *matHeaderCellDef style="width: 250px;"> 單位 </th>
+      <td mat-cell *matCellDef="let element"> {{element.unit}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

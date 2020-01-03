@@ -1,0 +1,21 @@
+<h1 mat-dialog-title> {{title}} </h1>
+<div mat-dialog-content>
+
+  <mat-form-field>
+    <input matInput placeholder="Item" [(ngModel)]="item">
+  </mat-form-field>
+
+  <br>
+
+  <!-- <p>Input your body observation</p> -->
+  <mat-form-field>
+    <input matInput placeholder="Unit" [(ngModel)]="unit">
+  </mat-form-field>
+
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="onOkClick()" *ngIf="!id" cdkFocusInitial>Ok</button>
+  <button mat-button (click)="onUpdateClick()" *ngIf="id" cdkFocusInitial>Update</button>
+</div>

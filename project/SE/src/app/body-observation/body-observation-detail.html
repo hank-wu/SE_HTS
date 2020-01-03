@@ -1,0 +1,39 @@
+<h1 mat-dialog-title> {{title}} </h1>
+<div mat-dialog-content>
+
+  <mat-form-field>
+
+    <mat-label>檢測項目</mat-label>
+    <mat-select [(value)] = "selectedType">
+      <mat-option *ngFor="let item of itemOption" [(value)]="item.id">
+        {{item.type}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <br>
+
+  <!-- <p>Input your body observation</p> -->
+  <mat-form-field>
+    <input matInput placeholder="Value" [(ngModel)]="value">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field>
+    <input matInput placeholder="Unit" [value]="getUnit()" disabled ="true" style="color: black;">
+  </mat-form-field>
+  
+  <br>
+
+  <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="onOkClick()" *ngIf="!dialogdata.id" cdkFocusInitial>Ok</button>
+  <button mat-button (click)="onUpdateClick()" *ngIf="dialogdata.id" cdkFocusInitial>Update</button>
+</div>

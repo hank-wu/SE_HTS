@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 1,
+        "row": 0,
+        "column": 0,
+        "width": 6,
+        "height": 3,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 2,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 2,
+        "row": 0,
+        "column": 6,
+        "width": 6,
+        "height": 3,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 3,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 3,
+        "row": 3,
+        "column": 0,
+        "width": 5,
+        "height": 3,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 4,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 4,
+        "row": 3,
+        "column": 5,
+        "width": 3,
+        "height": 3,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 5,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 5,
+        "row": 3,
+        "column": 8,
+        "width": 4,
+        "height": 3,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 6,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 6,
+        "row": 6,
+        "column": 0,
+        "width": 6,
+        "height": 3,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 7,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 7,
+        "row": 6,
+        "column": 6,
+        "width": 6,
+        "height": 3,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 8,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 8,
+        "row": 9,
+        "column": 0,
+        "width": 12,
+        "height": 4,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 9,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 9,
+        "row": 13,
+        "column": 0,
+        "width": 12,
+        "height": 4,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 10,
+        "dashboard_id": 1,
+        "widget_type": "Dashboardr::ChartWidget",
+        "widget_id": 10,
+        "row": 40,
+        "column": 0,
+        "width": 12,
+        "height": 4,
+        "created_at": null,
+        "updated_at": null
+    }
+]

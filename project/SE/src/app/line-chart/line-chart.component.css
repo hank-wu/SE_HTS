@@ -1,0 +1,7 @@
+.datepicker {
+    border:1px; 
+    border-bottom-style: solid;
+    border-top-style: none;border-left-style:none;
+    border-right-style:none;width: 180px;  margin-top: 1%;
+    border-color: darkgray;
+}
