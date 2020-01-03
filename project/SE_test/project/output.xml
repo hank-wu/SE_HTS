@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.0 on win32)" generated="20200101 21:48:49.754" rpa="false">
+<suite id="s1" name="Project" source="C:\SE_test\project">
+<suite id="s1-s1" name="HMS" source="C:\SE_test\project\HMS">
+<suite id="s1-s1-s1" name="HMS-TC-05-06" source="C:\SE_test\project\HMS\HMS-TC-05-06.robot">
+<test id="s1-s1-s1-t1" name="HMS-TC-06 Edit body observation item">
+<kw name="Login" library="keyword" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://140.124.181.142:4200/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20200101 21:48:49.966" level="INFO">Opening browser 'chrome' to base url 'http://140.124.181.142:4200/'.</msg>
+<status status="PASS" starttime="20200101 21:48:49.966" endtime="20200101 21:48:58.222"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200101 21:48:58.224" endtime="20200101 21:49:02.348"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>//*[contains(@placeholder, 'User Name (required)')]</arg>
+</arguments>
+<assign>
+<var>${userName}</var>
+</assign>
+<msg timestamp="20200101 21:49:02.349" level="INFO">${userName} = //*[contains(@placeholder, 'User Name (required)')]</msg>
+<status status="PASS" starttime="20200101 21:49:02.348" endtime="20200101 21:49:02.351"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${userName}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:02.351" endtime="20200101 21:49:02.396"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${userName}</arg>
+<arg>Jeff</arg>
+</arguments>
+<msg timestamp="20200101 21:49:02.397" level="INFO">Typing text 'Jeff' into text field '//*[contains(@placeholder, 'User Name (required)')]'.</msg>
+<status status="PASS" starttime="20200101 21:49:02.396" endtime="20200101 21:49:02.509"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>//*[contains(@placeholder, 'Password (required)')]</arg>
+</arguments>
+<assign>
+<var>${password}</var>
+</assign>
+<msg timestamp="20200101 21:49:02.510" level="INFO">${password} = //*[contains(@placeholder, 'Password (required)')]</msg>
+<status status="PASS" starttime="20200101 21:49:02.509" endtime="20200101 21:49:02.510"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:02.510" endtime="20200101 21:49:02.547"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200101 21:49:02.547" level="INFO">Typing text '123456' into text field '//*[contains(@placeholder, 'Password (required)')]'.</msg>
+<status status="PASS" starttime="20200101 21:49:02.547" endtime="20200101 21:49:02.647"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>//button[contains(text(), 'Log In')]</arg>
+</arguments>
+<assign>
+<var>${login}</var>
+</assign>
+<msg timestamp="20200101 21:49:02.648" level="INFO">${login} = //button[contains(text(), 'Log In')]</msg>
+<status status="PASS" starttime="20200101 21:49:02.647" endtime="20200101 21:49:02.648"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${login}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:02.649" endtime="20200101 21:49:02.678"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${login}</arg>
+</arguments>
+<msg timestamp="20200101 21:49:02.678" level="INFO">Clicking button '//button[contains(text(), 'Log In')]'.</msg>
+<status status="PASS" starttime="20200101 21:49:02.678" endtime="20200101 21:49:02.766"></status>
+</kw>
+<status status="PASS" starttime="20200101 21:48:49.965" endtime="20200101 21:49:02.767"></status>
+</kw>
+<kw name="Wait And Click" library="keyword">
+<arguments>
+<arg>xpath://*[contains(@class, 'nav-item')]//*[text()='檢測項目']</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:02.768" endtime="20200101 21:49:03.008"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200101 21:49:03.011" level="INFO">Clicking element 'xpath://*[contains(@class, 'nav-item')]//*[text()='檢測項目']'.</msg>
+<status status="PASS" starttime="20200101 21:49:03.010" endtime="20200101 21:49:03.145"></status>
+</kw>
+<status status="PASS" starttime="20200101 21:49:02.767" endtime="20200101 21:49:03.146"></status>
+</kw>
+<kw name="Get Elements" library="keyword">
+<arguments>
+<arg>xpath://div[contains(@class, 'mat-radio-outer-circle')]</arg>
+</arguments>
+<assign>
+<var>@{radio}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:03.147" endtime="20200101 21:49:03.185"></status>
+</kw>
+<kw name="Run Keyword And Return" library="BuiltIn">
+<doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>Get WebElements</arg>
+<arg>${element}</arg>
+</arguments>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:03.187" endtime="20200101 21:49:03.198"></status>
+</kw>
+<msg timestamp="20200101 21:49:03.198" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20200101 21:49:03.186" endtime="20200101 21:49:03.198"></status>
+</kw>
+<msg timestamp="20200101 21:49:03.199" level="INFO">@{radio} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="e9c7603fa4dab7fbb12e1c7dc637e608", element="0.5517388282042113-5")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="e9c7603fa4...</msg>
+<status status="PASS" starttime="20200101 21:49:03.146" endtime="20200101 21:49:03.199"></status>
+</kw>
+<kw name="Wait And Click" library="keyword">
+<arguments>
+<arg>@{radio}[4]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:03.200" endtime="20200101 21:49:03.213"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200101 21:49:03.214" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e9c7603fa4dab7fbb12e1c7dc637e608", element="0.5517388282042113-9")&gt;'.</msg>
+<status status="PASS" starttime="20200101 21:49:03.213" endtime="20200101 21:49:03.313"></status>
+</kw>
+<status status="PASS" starttime="20200101 21:49:03.199" endtime="20200101 21:49:03.314"></status>
+</kw>
+<kw name="Wait And Click" library="keyword">
+<arguments>
+<arg>xpath://*[text()='修改']</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:03.315" endtime="20200101 21:49:03.349"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200101 21:49:03.352" level="INFO">Clicking element 'xpath://*[text()='修改']'.</msg>
+<status status="PASS" starttime="20200101 21:49:03.350" endtime="20200101 21:49:03.537"></status>
+</kw>
+<status status="PASS" starttime="20200101 21:49:03.314" endtime="20200101 21:49:03.537"></status>
+</kw>
+<kw name="Wait And Click" library="keyword">
+<arguments>
+<arg>xpath://*[contains(@class, 'mat-form-field-infix')]//*[contains(@ng-reflect-placeholder, 'Unit')]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:03.538" endtime="20200101 21:49:03.576"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200101 21:49:03.577" level="INFO">Clicking element 'xpath://*[contains(@class, 'mat-form-field-infix')]//*[contains(@ng-reflect-placeholder, 'Unit')]'.</msg>
+<status status="PASS" starttime="20200101 21:49:03.576" endtime="20200101 21:49:03.747"></status>
+</kw>
+<status status="PASS" starttime="20200101 21:49:03.538" endtime="20200101 21:49:03.747"></status>
+</kw>
+<kw name="Wait And Input" library="keyword">
+<arguments>
+<arg>xpath://*[contains(@class, 'mat-form-field-infix')]//*[contains(@ng-reflect-placeholder, 'Unit')]</arg>
+<arg>xyz</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:03.748" endtime="20200101 21:49:03.764"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${input}</arg>
+</arguments>
+<msg timestamp="20200101 21:49:03.767" level="INFO">Typing text 'xyz' into text field 'xpath://*[contains(@class, 'mat-form-field-infix')]//*[contains(@ng-reflect-placeholder, 'Unit')]'.</msg>
+<status status="PASS" starttime="20200101 21:49:03.765" endtime="20200101 21:49:03.913"></status>
+</kw>
+<status status="PASS" starttime="20200101 21:49:03.748" endtime="20200101 21:49:03.918"></status>
+</kw>
+<kw name="Wait And Click Button" library="keyword">
+<arguments>
+<arg>xpath://button[contains(@class, 'mat-button mat-button-base ng-star-inserted')]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:03.922" endtime="20200101 21:49:03.963"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200101 21:49:03.965" level="INFO">Clicking button 'xpath://button[contains(@class, 'mat-button mat-button-base ng-star-inserted')]'.</msg>
+<status status="PASS" starttime="20200101 21:49:03.964" endtime="20200101 21:49:04.078"></status>
+</kw>
+<status status="PASS" starttime="20200101 21:49:03.920" endtime="20200101 21:49:04.079"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://td[text()=' xyz ']</arg>
+</arguments>
+<status status="PASS" starttime="20200101 21:49:04.079" endtime="20200101 21:49:04.547"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200101 21:49:04.549" endtime="20200101 21:49:06.768"></status>
+</kw>
+<status status="PASS" starttime="20200101 21:48:49.964" endtime="20200101 21:49:06.769" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200101 21:48:49.815" endtime="20200101 21:49:06.771"></status>
+</suite>
+<status status="PASS" starttime="20200101 21:48:49.813" endtime="20200101 21:49:06.773"></status>
+</suite>
+<status status="PASS" starttime="20200101 21:48:49.793" endtime="20200101 21:49:06.774"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Project">Project</stat>
+<stat pass="1" fail="0" id="s1-s1" name="HMS">Project.HMS</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="HMS-TC-05-06">Project.HMS.HMS-TC-05-06</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

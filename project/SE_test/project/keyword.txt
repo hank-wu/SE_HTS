@@ -1,0 +1,63 @@
+*** Settings ***
+Library           SeleniumLibrary
+
+*** Keywords ***
+Login
+    Open Browser    http://140.124.181.142:4200/    browser=chrome
+    Maximize Browser Window
+    
+    ${userName} =    Set Variable    //*[contains(@placeholder, 'User Name (required)')]
+    Wait Until Element Is Visible    ${userName}
+    Input Text    ${userName}    Jeff
+    
+    ${password} =    Set Variable    //*[contains(@placeholder, 'Password (required)')]
+    Wait Until Element Is Visible    ${password}
+    Input Text    ${password}    123456
+    
+    ${login} =    Set Variable    //button[contains(text(), 'Log In')]
+    Wait Until Element Is Visible    ${login}
+    Click Button    ${login}
+
+Login For Test
+    [Arguments]    ${name}    ${pass}
+    ${userName} =    Set Variable    //*[contains(@placeholder, 'User Name (required)')]
+    Wait Until Element Is Visible    ${userName}
+    Input Text    ${userName}    ${name}
+    
+    ${password} =    Set Variable    //*[contains(@placeholder, 'Password (required)')]
+    Wait Until Element Is Visible    ${password}
+    Input Text    ${password}    ${pass}
+    
+    ${login} =    Set Variable    //button[contains(text(), 'Log In')]
+    Wait Until Element Is Visible    ${login}
+    Click Button    ${login}
+
+Wait And Click
+    [Arguments]    ${element}
+    Wait Until Element Is Visible    ${element}
+    Click Element    ${element}
+
+Wait And Click Button
+    [Arguments]    ${element}
+    Wait Until Element Is Visible    ${element}
+    Click Button    ${element}
+
+Wait And Input
+    [Arguments]    ${element}    ${input}
+    Wait Until Element Is Visible    ${element}
+    Input Text    ${element}    ${input}
+
+Get Elements
+    [Arguments]    ${element}
+    Wait Until Element Is Visible    ${element}
+    Run Keyword And Return    Get WebElements     ${element}
+
+Validate Care Plan
+    [Arguments]    ${carePlan}    ${itme}
+    Sleep    90s
+    Wait And Click    xpath://a[@routerlink='/home']
+    Wait Until Element Is Visible    xpath://*[contains(text(), '${carePlan}需要今天記錄你的${itme}')]
+
+Scroll Page To Location
+    [Arguments]    ${x_location}    ${y_location}
+    Execute JavaScript    window.scrollTo(${x_location},${y_location})
