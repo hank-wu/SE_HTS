@@ -11,7 +11,7 @@
 ## 目標
 患者の健康管理を手伝ったりカウンセリングしたりするために開発するシステム（主にフロントエンドの部分）
 
-（フロントエンドソースコード：https://github.com/hank-wu/SE_HTS/tree/jp_introduction/project/SE）
+（フロントエンドソースコード：https://github.com/hank-wu/SE_HTS/tree/jp_introduction/project/SE ）
 <br>このシステムは二つの部分に分けられる:
 1. アカウント管理サブシステム(AMS，Account Management Subsyetem) (バックエンドソースコード:https://github.com/hank-wu/SE_HTS/tree/master/project/SE_server)
 2. 健康管理サブシステム(HMS，Health Management Subsystem) (バックエンド外部API:https://hapi.fhir.org/)
