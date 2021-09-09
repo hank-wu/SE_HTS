@@ -16,6 +16,10 @@
 1. アカウント管理サブシステム(AMS，Account Management Subsyetem) (バックエンドソースコード:https://github.com/hank-wu/SE_HTS/tree/master/project/SE_server)
 2. 健康管理サブシステム(HMS，Health Management Subsystem) (バックエンド外部API:https://hapi.fhir.org/)
 
+デモ動画:https://drive.google.com/drive/folders/1YlgjozPBsz4PiFg9nqdhOk01R3X8gygt?usp=sharing
+
+githubでのデモ動画：https://github.com/hank-wu/SE_HTS/tree/jp_introduction/demoVideo
+
 <br>
 
 |        |       |
@@ -107,6 +111,11 @@ Unit Testのファイル。line-chart.component.tsがいて、line-chart.compone
 `System Testでシステムをデモ動画：`
 
 https://drive.google.com/drive/folders/1YlgjozPBsz4PiFg9nqdhOk01R3X8gygt?usp=sharing
+
+`GitHubでSystem Testでシステムをデモ動画：`
+https://github.com/hank-wu/SE_HTS/tree/jp_introduction/demoVideo
+
+
 
 `System Testのソースコード：`
 
