@@ -91,7 +91,7 @@ Unit TestのソースコードはこのURLの中にいる。しかし、Unit Tes
 Unit Testのファイル。line-chart.component.tsがいて、line-chart.component.spec.tsがこのコンポーネントのUnit test。
 
 ## System Test 
-- - - -
+
 
 <br>
 
@@ -106,7 +106,7 @@ Unit Testのファイル。line-chart.component.tsがいて、line-chart.compone
 
 `System Testでシステムをデモ動画：`
 
-https://github.com/hank-wu/SE_HTS/tree/jp_introduction/demoVideo
+https://drive.google.com/drive/folders/1YlgjozPBsz4PiFg9nqdhOk01R3X8gygt?usp=sharing
 
 `System Testのソースコード：`
 
