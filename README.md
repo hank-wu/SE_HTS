@@ -2,6 +2,9 @@
 ### Japanese Introduction:
 https://github.com/hank-wu/OOAD/tree/jp_introduction
 
+
+# former introcuction
+
 我們有自己的server負責管理帳號在SE_server資料夾內
 
 這個server專案之前自己有一個github位置在 
