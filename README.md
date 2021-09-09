@@ -1,6 +1,6 @@
 # SE_HTS
 ### Japanese Introduction:
-https://github.com/hank-wu/OOAD/tree/jp_introduction
+https://github.com/hank-wu/SE_HTS/tree/jp_introduction
 
 
 # former introcuction
