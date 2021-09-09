@@ -77,6 +77,10 @@ githubでのデモ動画：https://github.com/hank-wu/SE_HTS/tree/jp_introductio
 
 ![sd](/readme_images/sd.png)
 
+`他のSequence Diagram`
+
+https://github.com/hank-wu/SE_HTS/tree/jp_introduction/doc/sequence_diagram
+
 <br>
 <br>
 
