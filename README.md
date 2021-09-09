@@ -2,7 +2,7 @@
 
 為了幫助患者進行健康管理，協助病人諮詢問題而設計的系統(前端部分)。
 <br>本系統主要分為兩個部分:
-1. 帳戶管理子系統(AMS，Account Management Subsyetem) (後端:https://github.com/hank-wu/SE_HTS/project/SE_server)
+1. 帳戶管理子系統(AMS，Account Management Subsyetem) (後端:https://github.com/hank-wu/SE_HTS/tree/master/project/SE_server)
 2. 健康管理子系統(HMS，Health Management Subsystem) (後端:https://hapi.fhir.org/)
 
 <br>
