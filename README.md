@@ -1,41 +1,83 @@
-# SE_HTS
-### Japanese Introduction:
-https://github.com/hank-wu/OOAD/tree/jp_introduction
+# 健康追蹤系統(Health Tracking System)
+
+為了幫助患者進行健康管理，協助病人諮詢問題而設計的系統(前端部分)。
+<br>本系統主要分為兩個部分:
+1. 帳戶管理子系統(AMS，Account Management Subsyetem) (後端:https://github.com/hank-wu/SE_HTS/project/SE_server)
+2. 健康管理子系統(HMS，Health Management Subsystem) (後端:https://hapi.fhir.org/)
+
+<br>
+
+|        |       |
+|  ----  | ----  |
+| 框架   | Angular |
+| 語言   | TypeScript |
 
 
-# former introcuction
+<br>
+<br>
+<br>
 
-我們有自己的server負責管理帳號在SE_server資料夾內
+## 使用者介面
+- - - -
 
-這個server專案之前自己有一個github位置在 
+`健康管理`
 
-https://github.com/dorarasogood/SE_server
+![hms](/readme_images/hms.png)
 
-前端部分是在SE資料夾內
+`編輯`
 
-這個前端專案之前自己有一個github位置在
+![hms_edit](/readme_images/hms_edit.png)
 
-https://github.com/dorarasogood/SE
+`照護計畫圖表`
 
-我們將整個系統架設在
-http://140.124.181.142:4200/
+![hms_chart](/readme_images/hms_chart.png)
 
-預設帳號為Jeff
+`帳號管理`
 
-密碼123456
+![account_management](/readme_images/account_management.png)
 
-單元測試可以直接進SE資料夾後跑npm install 再跑npm run cov
+<br>
+<br>
 
-即可執行單元測試並生成coverage report在SE/coverage/se_project下點index.html即是unit test report
+## 設計
+- - - -
 
-我們自己執行的unit test結果在doc/coverage內
+`系統架構圖設計`
 
-進doc/coverage/se_project後點index.html即可看到
+![system_architecture](/readme_images/system_architecture.png)
 
-驗收測試在project/SE_test內使用robot framework 寫的
+`帳戶管理子系統架構圖`
 
-這個測試專案之前自己有一個github位置在 
+![ams_architecture](/readme_images/ams_architecture.jpg)
 
-https://github.com/dorarasogood/SE_test
+`健康管理子系統架構圖`
 
-demo影片為錄製驗收測試的過程
+![hms_architecture](/readme_images/hms_architecture.jpg)
+
+`Class Diagram`
+
+![class_diagram](/readme_images/class_diagram.png)
+
+`其中一個Sequence Diagram`
+
+![sd](/readme_images/sd.png)
+
+<br>
+<br>
+
+## Unit Test Result
+- - - -
+
+`Unit Test Result`
+
+![unit_test](/readme_images/unit_test.png)
+
+<br>
+<br>
+
+## 啟動
+- - - -
+1. 安裝Nodejs 
+2. npm install -g @angular/cli 
+3. ng build 
+4. ng serve --open 
