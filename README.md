@@ -1,6 +1,6 @@
 # SE_HTS
-Japanese Introduction:
-https://github.com/hank-wu/SE_HRS/tree/jp_introduction
+### Japanese Introduction:
+https://github.com/hank-wu/OOAD/tree/jp_introduction
 
 我們有自己的server負責管理帳號在SE_server資料夾內
 
